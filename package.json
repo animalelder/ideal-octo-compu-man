@@ -1,8 +1,10 @@
 {
-  "name": "monorepo-template",
+  "name": "mono-notes",
   "version": "0.0.0",
   "workspaces": [
-    "packages/*"
+    "packages/core",
+    "packages/functions",
+    "packages/scripts"
   ],
   "scripts": {},
   "devDependencies": {
