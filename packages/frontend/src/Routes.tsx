@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from './containers/Home.tsx';
 import NotFound from './containers/NotFound.tsx';
 import Login from './containers/Login.tsx';
 import Signup from './containers/Signup.tsx';
 import NewNote from './containers/NewNote.tsx';
 import Notes from './containers/Notes.tsx';
 import Settings from './containers/Settings.tsx';
+import Home from './containers/Home.tsx';
 import AuthenticatedRoute from './components/AuthenticatedRoute.tsx';
 import UnauthenticatedRoute from './components/UnauthenticatedRoute.tsx';
 
@@ -26,6 +26,14 @@ export default function Links() {
           <UnauthenticatedRoute>
             <Signup />
           </UnauthenticatedRoute>
+        }
+      />
+      <Route
+        path='/'
+        element={
+          <AuthenticatedRoute>
+            <Home />
+          </AuthenticatedRoute>
         }
       />
       <Route
