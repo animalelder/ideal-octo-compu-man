@@ -1,4 +1,4 @@
-import { Resource } from 'sst';
-import { Example } from '@mono-notes';
+// import { Resource } from 'sst';
+// import { Util } from '@mono-notes/core/util';
 
-console.log(`${Example.hello()} Linked to ${Resource.Uploads.name}.`);
+// console.log(`${Util.handler()} Linked to ${Resource.Uploads.name}.`);
